@@ -235,7 +235,7 @@ button {
     p,
     .button {
       font-size: .875rem;
-      font-weight: 700;
+      font-weight: 500;
     }
 
     p {
@@ -245,7 +245,8 @@ button {
     section {
       &.content {
         button {
-          padding: 1.25rem 1.875rem;
+          padding: 1rem 1.7rem;
+
         }
       }
     }

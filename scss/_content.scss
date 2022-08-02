@@ -58,30 +58,31 @@ section {
         .content-text{
           order: 1;
           margin-left: 0;
-          margin-top: 6.875rem;
+          margin-top: 0;
+          align-self: end;
           width: 32.875rem;
           p{
             width: 26.5625rem;
-            margin-top: 4.0625rem;
+            margin-top: 3.0625rem;
             font-size: 1.1rem;
           }
           .cta-section{
             text-align: left;
             button{
               font-family: $font_family_semi_bold;
-              margin-top: 3.75rem;
+              margin-top: 2.75rem;
             }
           }
           .flex-images{
             margin-top: 3.875rem;
             margin-bottom: 0;
-            gap: 2.8125rem;
+            gap: 3.4rem;
             align-items: center;
             img{
               width: 100%;
               height: fit-content;
               max-height: none;
-              max-width: 6.875rem;
+              max-width: 4.875rem;
             }
           }
         }
