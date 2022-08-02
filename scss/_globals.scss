@@ -225,6 +225,7 @@ button {
 
 @include breakpoint-up(desktop) {
   body {
+    font-size: .875rem;
     h1 {
       font-size: 4.75rem;
       text-align: left;
@@ -232,8 +233,8 @@ button {
     }
 
     p,
-    button {
-      font-size: 1rem;
+    .button {
+      font-size: .875rem;
       font-weight: 700;
     }
 
@@ -249,5 +250,11 @@ button {
       }
     }
 
+  }
+}
+
+@include breakpoint-up(mobile) {
+  .header .modal-menu .modal-menu-list li{
+    cursor: none !important;
   }
 }
