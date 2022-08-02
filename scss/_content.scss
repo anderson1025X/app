@@ -1,0 +1,97 @@
+section {
+  &.content {
+    .content-wrap {
+      max-width: 375px;
+      margin: 0 auto;
+      .content-image {
+        min-height: 300px;
+        background-image: url($mobileMainImage);
+        background-size: cover;
+        background-position: top;
+      }
+
+      .content-text {
+        width: 20.9rem;
+        margin: 0 auto;
+        margin-top: 3.125rem;
+
+
+        p {
+          margin-top: 1.875rem;
+        }
+
+        .cta-section {
+          text-align: center;
+
+          button {
+            margin-top: 1.875rem;
+          }
+        }
+        .flex-images{
+          margin: 3.125rem 0 3.125rem 0;
+          gap: 1.875rem;
+          &:not(:last-child){
+            gap: 1.875rem;
+          }
+
+          img{
+            width: 100%;
+            height: auto;
+            max-width: 5rem;
+            max-height: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include breakpoint-up(desktop){
+  section {
+    &.content {
+      .content-wrap {
+        display: flex;
+        align-items: end;
+        max-width: 1140px;
+        margin-top: 2.5rem;
+
+        .content-text{
+          order: 1;
+          margin-left: 0;
+          margin-top: 6.875rem;
+          width: 31.875rem;
+          p{
+            width: 26.5625rem;
+            margin-top: 4.0625rem;
+          }
+          .cta-section{
+            text-align: left;
+            button{
+              font-family: $font_family_semi_bold;
+              margin-top: 3.75rem;
+            }
+          }
+          .flex-images{
+            margin-top: 3.875rem;
+            margin-bottom: 0;
+            gap: 2.8125rem;
+            align-items: center;
+            img{
+              width: 100%;
+              height: fit-content;
+              max-height: none;
+              max-width: 6.875rem;
+            }
+          }
+        }
+        .content-image{
+          width: 480px;
+          height: 640px;
+          order: 2;
+          background-image: url($desktopMainImage);
+          align-self: baseline;
+        }
+      }
+    }
+  }
+}

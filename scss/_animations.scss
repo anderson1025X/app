@@ -1,0 +1,57 @@
+@keyframes fade-in {
+  from{
+    visibility: hidden;
+    opacity: 0;
+  }
+  to{
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from{
+    visibility: visible;
+    opacity: 1;
+  }
+  99%{
+    visibility: visible;
+    opacity: 0;
+  }
+  to{
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in-modal-sub-menu {
+  from{
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+  }
+  to{
+    position: relative;
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+
+@keyframes fade-out-modal-sub-menu {
+  from{
+    visibility: visible;
+    opacity: 1;
+    position: relative;
+  }
+  99%{
+    visibility: visible;
+    opacity: 0;
+    position: absolute;
+  }
+  to{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+  }
+}
